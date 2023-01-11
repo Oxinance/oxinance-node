@@ -1,0 +1,25 @@
+{
+  "name": "oxinance",
+  "version": "1.0.0",
+  "description": "The Oxinance library provides convenient access to the Oxinance API",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oxinance/oxinance-node.git"
+  },
+  "keywords": [
+    "Oxinance"
+  ],
+  "author": "Oxinance",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Oxinance/oxinance-node/issues"
+  },
+  "homepage": "https://github.com/Oxinance/oxinance-node#readme",
+  "dependencies": {
+    "axios": "^1.2.2"
+  }
+}
