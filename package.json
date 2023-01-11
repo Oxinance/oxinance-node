@@ -2,9 +2,12 @@
   "name": "oxinance",
   "version": "1.0.0",
   "description": "The Oxinance library provides convenient access to the Oxinance API",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "test"
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,9 @@
     "url": "https://github.com/Oxinance/oxinance-node/issues"
   },
   "homepage": "https://github.com/Oxinance/oxinance-node#readme",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
   "dependencies": {
     "axios": "^1.2.2"
   }
