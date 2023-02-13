@@ -17,6 +17,11 @@ interface IRegister {
     metadata?: {};
 }
 
+interface IGoogleData {
+    access_token: string;
+    metadata?: {};
+}
+
 class UsersClient {
 
     public constructor() { }
@@ -31,6 +36,10 @@ class UsersClient {
 
     public register(data : IRegister) : Promise<AxiosResponse> {
         return instance.post("/v1/users/register", data);
+    }
+
+    public authenticateWithGoogle(data) {
+        return instance.post("/v1/users/oauth/google", data);
     }
 }
 
