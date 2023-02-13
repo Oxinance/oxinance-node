@@ -38,8 +38,8 @@ class UsersClient {
         return instance.post("/v1/users/register", data);
     }
 
-    public authenticateWithGoogle(data) {
-        return instance.post("/v1/users/oauth/google", data);
+    public authenticateWithGoogle(accessToken : string) {
+        return instance.post("/v1/users/oauth/google", {access_token: accessToken});
     }
 }
 
