@@ -1,6 +1,6 @@
 {
   "name": "oxinance",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "The Oxinance library provides convenient access to the Oxinance API",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
