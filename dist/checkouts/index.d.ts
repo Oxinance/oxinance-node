@@ -15,6 +15,7 @@ type RequestData = {
 };
 declare class CheckoutsClient {
     constructor();
+    generatePayPalCheckout(data?: RequestData): Promise<AxiosResponse>;
     generateBinanceCheckout(data?: RequestData): Promise<AxiosResponse>;
     generateStripeCheckoutSession(data?: RequestData): Promise<AxiosResponse>;
     generateStripePaymentIntent(data?: RequestData): Promise<AxiosResponse>;

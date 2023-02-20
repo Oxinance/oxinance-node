@@ -19,5 +19,6 @@ declare class UsersClient {
     login(data: ILogin): Promise<AxiosResponse>;
     register(data: IRegister): Promise<AxiosResponse>;
     authenticateWithGoogle(accessToken: string): Promise<AxiosResponse>;
+    authenticateWithFacebook(code: string): Promise<AxiosResponse>;
 }
 export default UsersClient;

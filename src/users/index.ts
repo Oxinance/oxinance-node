@@ -41,6 +41,10 @@ class UsersClient {
     public authenticateWithGoogle(accessToken : string) : Promise<AxiosResponse> {
         return instance.post("/v1/users/oauth/google", {access_token: accessToken});
     }
+
+    public authenticateWithFacebook(code : string) : Promise<AxiosResponse> {
+        return instance.post("/v1/users/oauth/facebook", {code: code});
+    }
 }
 
 export default UsersClient;

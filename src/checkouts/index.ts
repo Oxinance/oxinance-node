@@ -21,6 +21,10 @@ class CheckoutsClient {
 
     public constructor() { }
 
+    public generatePayPalCheckout(data : RequestData = {}) : Promise<AxiosResponse> {
+        return instance.post("/v1/checkouts/paypal", data);
+    }
+
     public generateBinanceCheckout(data : RequestData = {}) : Promise<AxiosResponse> {
         return instance.post("/v1/checkouts/binance", data);
     }
