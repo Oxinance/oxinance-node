@@ -45,6 +45,10 @@ class UsersClient {
     public authenticateWithFacebook(code : string) : Promise<AxiosResponse> {
         return instance.post("/v1/users/oauth/facebook", {code: code});
     }
+
+    public authenticateWithApple(code : string) : Promise<AxiosResponse> {
+        return instance.post("/v1/users/oauth/apple", {code: code});
+    }
 }
 
 export default UsersClient;
