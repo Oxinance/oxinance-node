@@ -4,6 +4,7 @@ import ProductsClient from "./products";
 import OrdersClient from "./orders";
 import CartItemsClient from "./cart-items";
 import CheckoutsClient from "./checkouts";
+import AlgoliaClient from "./algolia";
 
 
 class Oxinance {
@@ -13,6 +14,7 @@ class Oxinance {
     public Orders : OrdersClient = new OrdersClient();
     public CartItems : CartItemsClient = new CartItemsClient();
     public Checkouts : CheckoutsClient = new CheckoutsClient();
+    public Algolia : AlgoliaClient = new AlgoliaClient();
 
     public set publicKey(value : string) {
         instance.defaults.headers.common["project-public-key"] = value;
